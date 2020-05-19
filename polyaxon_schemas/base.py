@@ -9,7 +9,8 @@ from hestia.humanize import humanize_timesince
 from hestia.tz_utils import get_time_zone
 from hestia.units import to_percentage, to_unit_memory
 from marshmallow import RAISE, Schema, ValidationError, post_dump, post_load
-from marshmallow.utils import EXCLUDE, utc
+from marshmallow.utils import EXCLUDE
+from pytz import utc
 
 from polyaxon_schemas.exceptions import PolyaxonSchemaError
 from polyaxon_schemas.utils import to_camel_case
